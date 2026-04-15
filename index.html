@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WEBSTER SALON ADVISORY | Clinical Salon Strategy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#d7e2ff",
+                    "on-primary": "#e2e2e2",
+                    "on-secondary-container": "#1a1c1c",
+                    "tertiary-fixed-dim": "#004491",
+                    "surface-container-high": "#e8e8e8",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed": "#5e5e5e",
+                    "primary": "#000000",
+                    "on-primary-fixed-variant": "#e2e2e2",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "outline": "#777777",
+                    "surface-tint": "#5e5e5e",
+                    "surface": "#fcfcfc", /* Soften the background slightly for elegance */
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#474747",
+                    "primary-container": "#151b2d", /* Deep charcoal navy from logo */
+                    "secondary-container": "#d4d4d4",
+                    "background": "#fcfcfc",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-bright": "#fcfcfc",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#f5f5f5",
+                    "inverse-surface": "#2f3131",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#474747",
+                    "on-tertiary-fixed-variant": "#d7e2ff",
+                    "tertiary-container": "#1e3a8a", /* Deep blue from logo */
+                    "surface-dim": "#dadada",
+                    "on-tertiary-fixed": "#ffffff",
+                    "tertiary-fixed": "#115cb9",
+                    "on-secondary-fixed-variant": "#3a3c3c",
+                    "surface-variant": "#f0f0f0", /* adjusted for subtle bento bg */
+                    "inverse-primary": "#c6c6c6",
+                    "on-error-container": "#410002",
+                    "tertiary": "#1e3a8a", /* Update tertiary to brand blue */
+                    "on-secondary-fixed": "#1a1c1c",
+                    "outline-variant": "#e5e5e5",
+                    "secondary-fixed": "#c6c6c7",
+                    "on-primary-fixed": "#ffffff",
+                    "secondary": "#5d5f5f",
+                    "on-primary-container": "#ffffff",
+                    "on-surface": "#1a1a1a", /* darker typography */
+                    "secondary-fixed-dim": "#aaabab",
+                    "surface-container-low": "#fafafa",
+                    "on-tertiary-container": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, .serif { font-family: 'Noto Serif', serif; }
+        .sharp-0 { border-radius: 0 !important; }
+        .bg-brand-blue { background-color: #1e3a8a; } 
+        .text-brand-blue { color: #1e3a8a; }
+        .bg-brand-charcoal { background-color: #151b2d; } 
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-tertiary selection:text-white">
+
+<!-- Minimal Navbar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-black/5">
+    <nav class="flex justify-between items-center w-full px-6 md:px-12 py-5 max-w-[1920px] mx-auto">
+        <div class="text-sm font-bold tracking-widest text-primary uppercase">Webster</div>
+        <div class="hidden md:flex gap-12 text-[10px] uppercase font-bold tracking-[0.2em] text-on-surface-variant">
+            <a class="hover:text-brand-blue transition-colors duration-300" href="#reality">Reality</a>
+            <a class="hover:text-brand-blue transition-colors duration-300" href="#strategy">Strategy</a>
+            <a class="hover:text-brand-blue transition-colors duration-300" href="#investors">Investors</a>
+            <a class="hover:text-brand-blue transition-colors duration-300" href="#contact">Contact</a>
+        </div>
+        <button class="text-[10px] hidden sm:block tracking-widest font-bold uppercase hover:text-brand-blue transition-colors border-b border-transparent hover:border-brand-blue">
+            Enquire
+        </button>
+    </nav>
+</header>
+
+<main>
+    <!-- Muted, Editorial Split Hero -->
+    <section class="min-h-[85vh] pt-32 pb-16 px-6 md:px-12 max-w-[1920px] mx-auto bg-surface flex flex-col justify-between">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start h-full">
+            
+            <!-- Left: Massive Serif Typographic Treatment -->
+            <div class="lg:col-span-7 flex flex-col h-full justify-center pr-4 md:pr-12 pt-10 pb-12 lg:py-0">
+                <span class="text-xs tracking-[0.3em] font-medium text-brand-blue mb-8 block uppercase">Clinical Salon Strategy</span>
+                <h1 class="text-6xl md:text-[8rem] lg:text-[10rem] font-headline font-light leading-[0.85] text-primary tracking-tighter mix-blend-multiply">
+                    Webster<br/>Advisory.
+                </h1>
+                <p class="text-xl md:text-3xl font-light text-on-surface-variant leading-relaxed font-headline mt-12 max-w-2xl">
+                    Passion opens salons. <br/><span class="italic text-brand-blue">Structure keeps them open.</span>
+                </p>
+                <div class="mt-12 flex items-center gap-6">
+                    <button class="bg-brand-charcoal text-white px-8 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-blue transition-colors sharp-0">
+                        Book Strategy Call
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Elegant contained image block -->
+            <div class="lg:col-span-5 h-[50vh] lg:h-[70vh] w-full relative">
+                <img src="https://lh3.googleusercontent.com/aida/ADBb0ugjBppoESo_vXJ6WG9-4YrhgTaFN9pCkT1Y2xZVcpeAw6Dx_fv4qNF3d9EZRoudJusliTzc_YLU1xT3ZDDnCT5iAOtIKgA88TrJ8Gwity25rwrvopd7f_WSv7oHskoBoh2NZ4_ZDQ12v31JH8aOLla9z99gEPZOUATyo3bYAuM217qQ7TnJxgrjC60RiMRVb3SdZ86vJ7QoYIvAW2J_iqD4JcJbH2kXMxCqKyPRIhWJsa9uJz85gshqt-hpnSydOW-uDS5GMUDPnA" 
+                     alt="Marc Webster" 
+                     class="absolute inset-0 w-full h-full object-cover grayscale-[15%] object-top" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Centered Airy Stat / Quote Section -->
+    <section class="py-32 px-6 md:px-12 bg-surface text-center border-t border-black/5" id="reality">
+        <div class="max-w-4xl mx-auto relative flex flex-col items-center">
+            
+            <p class="text-3xl md:text-5xl font-headline font-light leading-snug text-on-surface tracking-tight mb-16 px-4">
+                "Opening a salon requires belief.<br/>Sustaining one requires discipline."
+            </p>
+            
+            <!-- Minimal Grid stats -->
+            <div class="flex flex-wrap justify-center gap-[1px] bg-black/10 border border-black/10">
+                <div class="bg-surface p-10 w-44 flex flex-col items-center justify-center hover:bg-surface-container-low transition-colors group">
+                    <span class="text-4xl font-headline font-light text-brand-blue group-hover:text-primary transition-colors mb-3">01</span>
+                    <span class="text-[9px] tracking-[0.2em] uppercase text-on-surface-variant font-bold text-center">Isolate Variables</span>
+                </div>
+                <div class="bg-surface p-10 w-44 flex flex-col items-center justify-center hover:bg-surface-container-low transition-colors group">
+                    <span class="text-4xl font-headline font-light text-brand-blue group-hover:text-primary transition-colors mb-3">02</span>
+                    <span class="text-[9px] tracking-[0.2em] uppercase text-on-surface-variant font-bold text-center">Structure Margins</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- The Commercial Reality (Text + Image Side-by-Side like the reference block) -->
+    <section class="py-32 px-6 md:px-12 bg-surface border-t border-black/5">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="text-center mb-24 flex flex-col items-center">
+                <h2 class="text-5xl md:text-6xl font-headline font-normal tracking-tighter text-primary mb-8">The Commercial Reality</h2>
+                <div class="h-[80px] w-px bg-black/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div class="order-2 lg:order-1 relative aspect-[4/5] w-full max-w-xl mx-auto">
+                    <img src="https://lh3.googleusercontent.com/aida/ADBb0ugT531poLeOIFnFjWzdmjupDN6Q-NbVjwL1jL8BuGzRlmWgBqDe3_QZpzcO3YusI2Ze2Q0-JGuFj6f241XnMcbfxGqA0BLVuy59H2ABu0Z17mlpqu9-EzgcOG5Xg8-ST7PSvNLgDNKNaPjgrXMpSHEEcIO09CJFj9voN9hxzhplqOpxPowDg4xFlGr8_EJNBXn16DDENJWWZdckVVzjMaFTHCXWfSYS0GCEo5UK7JtlslRV3qV_cC8HBCH-zN9JP5eDHbGo81jONg"
+                         alt="Marc Webster Seated" class="absolute inset-0 w-full h-full object-cover grayscale-[20%]" />
+                </div>
+                
+                <div class="order-1 lg:order-2 flex flex-col justify-center">
+                    <h3 class="text-3xl font-headline font-light mb-8 italic">Methodology</h3>
+                    <p class="text-on-surface-variant font-light text-lg leading-relaxed mb-12 max-w-md">
+                        We strip away the emotional bias of creative salon management, isolating the commercial vulnerabilities that silently erode profitability. 
+                    </p>
+                    
+                    <ul class="text-[11px] uppercase tracking-[0.1em] font-medium space-y-6 text-primary">
+                        <li class="flex items-center gap-6 border-b border-black/5 pb-4">
+                            <span class="material-symbols-outlined font-light text-brand-blue">stat_minus_1</span> 
+                            Unoptimized Labour Utilization
+                        </li>
+                        <li class="flex items-center gap-6 border-b border-black/5 pb-4">
+                            <span class="material-symbols-outlined font-light text-brand-blue">payments</span> 
+                            Escalating Occupancy Vulnerability
+                        </li>
+                        <li class="flex items-center gap-6 border-b border-black/5 pb-4">
+                            <span class="material-symbols-outlined font-light text-brand-blue">inventory_2</span> 
+                            Static Inventory Management
+                        </li>
+                        <li class="flex items-center gap-6">
+                            <span class="material-symbols-outlined font-light text-brand-blue">groups_3</span> 
+                            Talent Retention Asynchrony
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section (Strategy & Digital Infrastructure) -->
+    <section class="py-32 px-6 md:px-12 bg-surface-container-low border-t border-black/5" id="strategy">
+        <div class="max-w-[1600px] mx-auto flex flex-col items-center">
+            
+            <div class="text-center mb-20 max-w-lg">
+                <h2 class="text-4xl md:text-6xl font-headline font-normal tracking-tighter mb-6">Topics We Cover</h2>
+                <p class="text-xs uppercase tracking-[0.2em] font-bold text-on-surface-variant">Strategy Review Framework</p>
+            </div>
+
+            <!-- Bento grid exactly mimicking that thin bordery elegant feel from the ref -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1px] bg-outline-variant border border-outline-variant shadow-sm">
+                
+                <!-- Bento Cell 1 -->
+                <div class="bg-surface p-10 flex flex-col justify-between aspect-square group hover:bg-surface-variant transition-colors duration-500 relative overflow-hidden">
+                    <div class="flex justify-between items-start z-10">
+                        <h3 class="font-headline text-3xl font-light">Break-<br/>Even</h3>
+                        <span class="text-[10px] tracking-widest font-bold text-on-surface-variant">01</span>
+                    </div>
+                    <p class="text-xs font-light leading-relaxed mt-auto mb-8 text-on-surface-variant z-10">
+                        Granular analysis of fixed & variable costs. We find the precise moment of profitability per chair, per hour.
+                    </p>
+                    <div class="flex items-center gap-2 text-[9px] uppercase tracking-[0.2em] font-bold text-brand-blue z-10 w-max">
+                        <span class="material-symbols-outlined text-sm font-light">analytics</span>
+                        Analyze
+                    </div>
+                </div>
+
+                <!-- Bento Cell 2 -->
+                <div class="bg-surface p-10 flex flex-col justify-between aspect-square group hover:bg-surface-variant transition-colors duration-500 relative overflow-hidden">
+                    <div class="flex justify-between items-start z-10">
+                        <h3 class="font-headline text-3xl font-light">Lease<br/>Terms</h3>
+                        <span class="text-[10px] tracking-widest font-bold text-on-surface-variant">02</span>
+                    </div>
+                    <p class="text-xs font-light leading-relaxed mt-auto mb-8 text-on-surface-variant z-10">
+                        Evaluating escalations and turnover clauses ensures your footprint isn't a financial anchor.
+                    </p>
+                    <div class="flex items-center gap-2 text-[9px] uppercase tracking-[0.2em] font-bold text-brand-blue z-10 w-max">
+                        <span class="material-symbols-outlined text-sm font-light">real_estate_agent</span>
+                        Audit
+                    </div>
+                </div>
+
+                <!-- Bento Cell 3 -->
+                <div class="bg-surface p-10 flex flex-col justify-between aspect-square group hover:bg-surface-variant transition-colors duration-500 relative overflow-hidden">
+                    <div class="flex justify-between items-start z-10">
+                        <h3 class="font-headline text-3xl font-light">Cash<br/>Flow</h3>
+                        <span class="text-[10px] tracking-widest font-bold text-on-surface-variant">03</span>
+                    </div>
+                    <p class="text-xs font-light leading-relaxed mt-auto mb-8 text-on-surface-variant z-10">
+                        Forecasting liquidity across peak and trough seasons to maintain stability and investor confidence.
+                    </p>
+                    <div class="flex items-center gap-2 text-[9px] uppercase tracking-[0.2em] font-bold text-brand-blue z-10 w-max">
+                        <span class="material-symbols-outlined text-sm font-light">account_balance</span>
+                        Forecast
+                    </div>
+                </div>
+
+                <!-- Bento Cell 4 -->
+                <div class="bg-brand-charcoal text-white p-10 flex flex-col justify-between aspect-square group hover:bg-brand-blue transition-colors duration-500 relative overflow-hidden">
+                    <div class="flex justify-between items-start z-10">
+                        <h3 class="font-headline text-3xl font-light">Digital<br/>Infra.</h3>
+                        <span class="text-[10px] tracking-widest font-bold text-white/50">04</span>
+                    </div>
+                    <p class="text-xs font-light leading-relaxed mt-auto mb-8 text-white/70 z-10">
+                        High-precision CRM, ERP, and booking systems that capture client data as operational and structural equity.
+                    </p>
+                    <div class="flex items-center gap-2 text-[9px] uppercase tracking-[0.2em] font-bold text-white z-10 w-max border-b border-white pb-1 w-fit">
+                        Deploy System
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-20">
+                <button class="border border-primary text-primary px-10 py-5 text-[10px] uppercase font-bold tracking-[0.2em] hover:bg-primary hover:text-white transition-all">
+                    Enquire About Review
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- The Dark "Investors Stack" Section mimicking the dark reference block -->
+    <section class="py-40 px-6 md:px-12 bg-[#2c2927]" id="investors"> <!-- Dark warm charcoal matching reference vibe closely -->
+        
+        <div class="max-w-[700px] mx-auto space-y-8 flex flex-col items-center">
+            
+            <!-- Cards acting like the square blocks in the reference image dark section -->
+            <div class="w-full bg-surface aspect-video md:aspect-[2.5/1] shadow-2xl flex flex-col justify-center items-center text-center p-12 hover:-translate-y-2 transition-transform duration-500">
+                <span class="material-symbols-outlined text-3xl text-brand-blue mb-4">description</span>
+                <h4 class="text-2xl font-headline font-light tracking-tight mb-2">Due Diligence Reports</h4>
+                <p class="text-[10px] font-bold tracking-[0.1em] uppercase text-on-surface-variant max-w-sm">Confidential commercial clarity for providers of capital</p>
+            </div>
+            
+            <div class="w-full bg-surface aspect-video md:aspect-[2.5/1] shadow-2xl flex flex-col justify-center items-center text-center p-12 hover:-translate-y-2 transition-transform duration-500">
+                <span class="material-symbols-outlined text-3xl text-brand-blue mb-4">trending_up</span>
+                <h4 class="text-2xl font-headline font-light tracking-tight mb-2">Pre-Seed Feasibility</h4>
+                <p class="text-[10px] font-bold tracking-[0.1em] uppercase text-on-surface-variant max-w-sm">Risk isolation prior to physical lease commitment</p>
+            </div>
+            
+            <div class="w-full bg-surface aspect-video md:aspect-[2.5/1] shadow-2xl flex flex-col justify-center items-center text-center p-12 hover:-translate-y-2 transition-transform duration-500">
+                <span class="material-symbols-outlined text-3xl text-brand-blue mb-4">warning</span>
+                <h4 class="text-2xl font-headline font-light tracking-tight mb-2">Crisis Intervention</h4>
+                <p class="text-[10px] font-bold tracking-[0.1em] uppercase text-on-surface-variant max-w-sm">Immediate operational stabilization protocols</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Minimal, Open Footer -->
+    <footer class="py-32 px-6 md:px-12 bg-surface text-center border-t border-black/5" id="contact">
+        <div class="max-w-2xl mx-auto flex flex-col items-center">
+            
+            <h2 class="text-5xl md:text-7xl text-primary font-headline font-light mb-16 tracking-tighter">
+                Webster
+            </h2>
+            
+            <!-- Contact form line input styled like the footer in ref -->
+            <form class="w-full max-w-md flex border-b border-black/20 pb-3 mb-24 group hover:border-brand-blue transition-colors">
+                <input type="email" placeholder="ENTER EMAIL FOR ADVISORY" class="bg-transparent border-none outline-none focus:ring-0 flex-grow text-[9px] tracking-[0.2em] uppercase font-bold text-center placeholder-on-surface-variant p-0"/>
+                <button type="submit" class="text-[9px] font-bold uppercase tracking-[0.2em] hover:text-brand-blue transition-colors pl-4">Submit</button>
+            </form>
+            
+            <div class="flex flex-wrap gap-8 md:gap-16 text-[9px] uppercase tracking-[0.2em] font-bold text-on-surface-variant justify-center mb-16">
+                <a href="#" class="hover:text-brand-blue transition-colors">Privacy</a>
+                <a href="#" class="hover:text-brand-blue transition-colors">Terms</a>
+                <a href="#" class="hover:text-brand-blue transition-colors">Methodology</a>
+                <a href="#" class="hover:text-brand-blue transition-colors">Ethics</a>
+            </div>
+            
+            <p class="text-[8px] text-on-surface-variant uppercase tracking-[0.3em]">© 2024 Webster Salon Advisory. All Rights Reserved.</p>
+            
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>
