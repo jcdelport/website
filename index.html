@@ -96,7 +96,36 @@
 <!-- Minimal Navbar -->
 <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-black/5">
     <nav class="flex justify-between items-center w-full px-6 md:px-12 py-5 max-w-[1920px] mx-auto">
-        <div class="text-sm font-bold tracking-widest text-primary uppercase">Webster</div>
+        <div class="flex items-center gap-3">
+            <svg viewBox="0 0 100 80" class="w-8 h-6 md:w-[2.25rem] md:h-[1.75rem]" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#0b1338" />
+                        <stop offset="100%" stop-color="#1e3a8a" />
+                    </linearGradient>
+                    <linearGradient id="logoMidL" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#60a5fa" />
+                        <stop offset="100%" stop-color="#2563eb" />
+                    </linearGradient>
+                    <linearGradient id="logoMidR" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#1d4ed8" />
+                        <stop offset="100%" stop-color="#1e40af" />
+                    </linearGradient>
+                    <linearGradient id="logoRight" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#bae6fd" />
+                        <stop offset="100%" stop-color="#3b82f6" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,0 28,0 25,80" fill="url(#logoLeft)" />
+                <polygon points="28,0 50,40 25,80" fill="url(#logoMidL)" />
+                <polygon points="70,0 50,40 75,80" fill="url(#logoMidR)" />
+                <polygon points="70,0 100,0 75,80" fill="url(#logoRight)" />
+            </svg>
+            <div class="flex flex-col justify-center">
+                <span class="text-[13px] font-bold tracking-[0.2em] text-primary uppercase leading-[1.1] mb-[1px]">Webster</span>
+                <span class="text-[6px] font-medium tracking-[0.3em] text-on-surface-variant uppercase">Salon Advisory</span>
+            </div>
+        </div>
         <div class="hidden md:flex gap-12 text-[10px] uppercase font-bold tracking-[0.2em] text-on-surface-variant">
             <a class="hover:text-brand-blue transition-colors duration-300" href="#reality">Reality</a>
             <a class="hover:text-brand-blue transition-colors duration-300" href="#strategy">Strategy</a>
