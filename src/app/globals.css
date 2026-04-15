@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter-tight), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-bodoni), "Bodoni Moda", "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-charcoal: #151b2d;
+  --color-brand-blue: #1e3a8a;
+  --color-faint: #f5f5f5;
+  --color-outline: #e5e5e5;
+  
+  /* Adding large clamp for massive typography */
+  --text-clamp-super: clamp(4rem, 15vw, 12rem);
+  --text-clamp-title: clamp(3rem, 8vw, 7rem);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply font-sans antialiased selection:bg-black selection:text-white;
+  }
+}
+
+@layer utilities {
+  .text-hollow {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  .text-super {
+    font-size: var(--text-clamp-super);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+  
+  .text-title {
+    font-size: var(--text-clamp-title);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+  }
+
+  .blend-difference {
+    mix-blend-mode: difference;
+    color: white; /* Will appear black on white backgrounds */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.active {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  mix-blend-mode: normal;
+}
+
+.custom-cursor-text {
+  opacity: 0;
+  font-size: 10px;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.custom-cursor.active .custom-cursor-text {
+  opacity: 1;
+}
+
+/* Liquid Fill Hover Button */
+.btn-liquid {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-liquid::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: black;
+  transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: -1;
+}
+
+.btn-liquid:hover::before {
+  height: 100%;
+}
+
+.btn-liquid:hover {
+  color: white;
+}
