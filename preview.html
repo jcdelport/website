@@ -5,6 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>WEBSTER SALON ADVISORY | Clinical Salon Strategy</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
@@ -109,33 +110,51 @@
 </header>
 
 <main>
-    <!-- Muted, Editorial Split Hero -->
-    <section class="min-h-[85vh] pt-32 pb-16 px-6 md:px-12 max-w-[1920px] mx-auto bg-surface flex flex-col justify-between">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start h-full">
-            
-            <!-- Left: Massive Serif Typographic Treatment -->
-            <div class="lg:col-span-7 flex flex-col h-full justify-center pr-4 md:pr-12 pt-10 pb-12 lg:py-0">
-                <span class="text-xs tracking-[0.3em] font-medium text-brand-blue mb-8 block uppercase">Clinical Salon Strategy</span>
-                <h1 class="text-6xl md:text-[8rem] lg:text-[10rem] font-headline font-light leading-[0.85] text-primary tracking-tighter mix-blend-multiply">
-                    Webster<br/>Advisory.
-                </h1>
-                <p class="text-xl md:text-3xl font-light text-on-surface-variant leading-relaxed font-headline mt-12 max-w-2xl">
-                    Passion opens salons. <br/><span class="italic text-brand-blue">Structure keeps them open.</span>
-                </p>
-                <div class="mt-12 flex items-center gap-6">
-                    <button class="bg-brand-charcoal text-white px-8 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-brand-blue transition-colors sharp-0">
-                        Book Strategy Call
-                    </button>
+    <!-- Redesigned Minimal & Elegant Hero with GSAP -->
+    <section class="relative min-h-screen flex items-center justify-center bg-surface overflow-hidden pt-20">
+        
+        <!-- Elegant Background Image container (initially hidden/scaled for GSAP) -->
+        <div class="absolute right-0 top-0 w-full lg:w-3/5 h-full overflow-hidden opacity-0" id="hero-img-container">
+            <img src="https://lh3.googleusercontent.com/aida/ADBb0ugjBppoESo_vXJ6WG9-4YrhgTaFN9pCkT1Y2xZVcpeAw6Dx_fv4qNF3d9EZRoudJusliTzc_YLU1xT3ZDDnCT5iAOtIKgA88TrJ8Gwity25rwrvopd7f_WSv7oHskoBoh2NZ4_ZDQ12v31JH8aOLla9z99gEPZOUATyo3bYAuM217qQ7TnJxgrjC60RiMRVb3SdZ86vJ7QoYIvAW2J_iqD4JcJbH2kXMxCqKyPRIhWJsa9uJz85gshqt-hpnSydOW-uDS5GMUDPnA" 
+                 alt="Marc Webster" 
+                 id="hero-img"
+                 class="w-full h-full object-cover grayscale-[30%] object-top scale-[1.15]" />
+            <!-- Soft gradient overlay to blend image into background smoothly on the left side -->
+            <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+            <!-- Bottom fade -->
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 md:px-12 w-full mt-10 md:mt-0">
+            <div class="max-w-[1400px]">
+                
+                <div class="overflow-hidden mb-6">
+                    <span class="text-[10px] tracking-[0.4em] font-bold text-brand-blue uppercase block translate-y-full opacity-0" id="hero-subtitle">
+                        Clinical Salon Strategy
+                    </span>
                 </div>
-            </div>
+                
+                <h1 class="text-6xl sm:text-[7rem] md:text-[9rem] lg:text-[11rem] font-headline font-normal leading-[0.9] text-primary tracking-tighter mix-blend-multiply">
+                    <div class="overflow-hidden py-2"><div class="hero-title-line translate-y-[120%] rotate-[3deg] opacity-0 origin-bottom-left">Webster</div></div>
+                    <div class="overflow-hidden py-2"><div class="hero-title-line translate-y-[120%] rotate-[3deg] opacity-0 origin-bottom-left">Advisory.</div></div>
+                </h1>
+                
+                <div class="mt-16 overflow-hidden max-w-xl">
+                    <p class="text-xl md:text-3xl font-light text-on-surface-variant leading-relaxed font-headline translate-y-full opacity-0" id="hero-desc">
+                        Passion opens salons. <br/><span class="italic text-brand-blue">Structure keeps them open.</span>
+                    </p>
+                </div>
 
-            <!-- Right: Elegant contained image block -->
-            <div class="lg:col-span-5 h-[50vh] lg:h-[70vh] w-full relative">
-                <img src="https://lh3.googleusercontent.com/aida/ADBb0ugjBppoESo_vXJ6WG9-4YrhgTaFN9pCkT1Y2xZVcpeAw6Dx_fv4qNF3d9EZRoudJusliTzc_YLU1xT3ZDDnCT5iAOtIKgA88TrJ8Gwity25rwrvopd7f_WSv7oHskoBoh2NZ4_ZDQ12v31JH8aOLla9z99gEPZOUATyo3bYAuM217qQ7TnJxgrjC60RiMRVb3SdZ86vJ7QoYIvAW2J_iqD4JcJbH2kXMxCqKyPRIhWJsa9uJz85gshqt-hpnSydOW-uDS5GMUDPnA" 
-                     alt="Marc Webster" 
-                     class="absolute inset-0 w-full h-full object-cover grayscale-[15%] object-top" />
+                <div class="mt-12 overflow-hidden">
+                    <div class="translate-y-full opacity-0" id="hero-btn">
+                        <button class="bg-brand-charcoal text-white px-10 py-5 text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-brand-blue hover:text-white transition-all duration-500 sharp-0 relative overflow-hidden group">
+                            <span class="relative z-10">Book Strategy Call</span>
+                            <div class="absolute inset-0 w-full h-full bg-brand-blue scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-in-out z-0"></div>
+                        </button>
+                    </div>
+                </div>
+                
             </div>
-
         </div>
     </section>
 
@@ -341,5 +360,31 @@
     </footer>
 
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+        tl.to("#hero-img-container", { opacity: 1, duration: 2.5 }, 0.2)
+          .to("#hero-img", { scale: 1, duration: 4, ease: "power2.out" }, 0.2)
+          
+        tl.to("#hero-subtitle", { y: 0, opacity: 1, duration: 1.2 }, 0.5)
+
+        tl.to(".hero-title-line", {
+            y: 0,
+            opacity: 1,
+            rotate: 0,
+            duration: 1.6,
+            stagger: 0.15,
+            ease: "expo.out"
+        }, 0.7)
+
+        tl.to(["#hero-desc", "#hero-btn"], {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            stagger: 0.15
+        }, 1.4);
+    });
+</script>
 </body>
 </html>
