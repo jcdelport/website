@@ -194,19 +194,19 @@ export default function Home() {
              
              <div className="w-full md:w-[50%] flex flex-col gap-16 md:pt-40 md:pl-16 md:border-l border-pitch/10 max-md:mt-16">
                  <div>
-                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">The Wage Trap</h3>
+                    <h3 className="text-3xl font-serif mb-4 text-pitch">The Wage Trap</h3>
                     <p className="font-sans text-[18px] opacity-70 font-light">Navigating the £12.71+ National Living Wage while maintaining profit.</p>
                  </div>
                  <div>
-                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">The Hybrid Shift</h3>
+                    <h3 className="text-3xl font-serif mb-4 text-pitch">The Hybrid Shift</h3>
                     <p className="font-sans text-[18px] opacity-70 font-light">Balancing stylist autonomy with business security.</p>
                  </div>
                  <div>
-                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">Lease Exposure</h3>
+                    <h3 className="text-3xl font-serif mb-4 text-pitch">Lease Exposure</h3>
                     <p className="font-sans text-[18px] opacity-70 font-light">Protecting capital from aggressive "Schedule of Condition" clauses.</p>
                  </div>
                  <div>
-                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">System Over Personality</h3>
+                    <h3 className="text-3xl font-serif mb-4 text-pitch">System Over Personality</h3>
                     <p className="font-sans text-[18px] opacity-70 font-light">Moving from individual-led to system-driven operations.</p>
                  </div>
              </div>
