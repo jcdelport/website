@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import EcosystemStack from "../components/EcosystemStack";
+import Navigation from "../components/Navigation";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -121,6 +122,8 @@ export default function Home() {
         </a>
       </header>
 
+      <Navigation />
+
       {/* 
         1. THE GLOBAL STATEMENT (Pitch Black - Elevated Legibility) 
       */}
@@ -165,7 +168,7 @@ export default function Home() {
             Concept: The Asymmetric Brutalist Split.
             Complete structural separation. No float overlaps.
           */}
-          <section className="relative w-full min-h-[90vh] bg-bone text-pitch py-40 border-none z-20 flex items-center">
+          <section id="principal" className="relative w-full min-h-[90vh] bg-bone text-pitch py-40 border-none z-20 flex items-center">
              
              <div className="w-full flex flex-col md:flex-row items-center block">
                
@@ -196,7 +199,7 @@ export default function Home() {
       </div>
 
       {/* 3. THE TURNKEY MANDATE */}
-      <section className="relative w-full py-56 bg-pitch text-white overflow-hidden px-8 md:px-24 z-20">
+      <section id="mandate" className="relative w-full py-56 bg-pitch text-white overflow-hidden px-8 md:px-24 z-20">
         <div className="absolute inset-0 bg-gradient-to-b from-pitch via-pitch to-pitch/80 z-0 pointer-events-none"></div>
 
         <div className="max-w-[90vw] mx-auto mb-40 flex flex-col items-center text-center relative z-20">
@@ -233,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* 4. THE STRATEGIC AUDIT & DIGITAL NERVE CENTER */}
-      <section className="relative w-full py-40 px-8 md:px-24 bg-bone text-pitch z-10 font-light">
+      <section id="audit" className="relative w-full py-40 px-8 md:px-24 bg-bone text-pitch z-10 font-light">
          
          {/* Preventative Commercial Audit */}
          <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row gap-24 mb-56 pt-24 border-t border-pitch/10">
@@ -257,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* NEW 3D STACK SECTION (Pitch Black to highlight the isometric lighting) */}
-      <section className="relative w-full overflow-hidden bg-pitch text-white py-40 z-10 border-t border-white/10">
+      <section id="ecosystem" className="relative w-full overflow-hidden bg-pitch text-white py-40 z-10 border-t border-white/10">
          
          <div className="max-w-[90vw] mx-auto flex flex-col items-center text-center pb-24">
             <span className="font-mono text-sm uppercase font-bold tracking-[0.3em] text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-6 block drop-shadow-[0_0_10px_rgba(0,191,255,0.4)]">Digital Infrastructure</span>
@@ -350,8 +353,34 @@ export default function Home() {
       </section>
 
       {/* 6. GLOBAL FOOTER (Pitch Black with Scroll Ticker) */}
-      <footer className="w-full bg-pitch text-white border-t-[1px] border-[#0056B3]/30 relative z-30 pt-4">
-        <div className="marquee-container py-12 uppercase tracking-[0.3em] font-sans text-[16px] md:text-xl">
+      <footer className="w-full bg-pitch text-white border-t-[1px] border-[#0056B3]/30 relative z-30 pt-24 pb-12">
+        <div className="w-full flex justify-center mb-16 px-8 pointer-events-auto">
+          <svg viewBox="0 0 100 80" className="w-[80px] md:w-[120px] h-auto drop-shadow-[0_0_30px_rgba(0,191,255,0.4)]" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                  <linearGradient id="logoLeftF" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#0b1338" />
+                      <stop offset="100%" stopColor="#0056B3" />
+                  </linearGradient>
+                  <linearGradient id="logoMidLF" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="#0056B3" />
+                      <stop offset="100%" stopColor="#00BFFF" />
+                  </linearGradient>
+                  <linearGradient id="logoMidRF" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="#0056B3" />
+                      <stop offset="100%" stopColor="#1e40af" />
+                  </linearGradient>
+                  <linearGradient id="logoRightF" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#00BFFF" />
+                      <stop offset="100%" stopColor="#3b82f6" />
+                  </linearGradient>
+              </defs>
+              <polygon points="0,0 28,0 25,80" fill="url(#logoLeftF)" />
+              <polygon points="28,0 50,40 25,80" fill="url(#logoMidLF)" />
+              <polygon points="70,0 50,40 75,80" fill="url(#logoMidRF)" />
+              <polygon points="70,0 100,0 75,80" fill="url(#logoRightF)" />
+          </svg>
+        </div>
+        <div className="marquee-container py-12 uppercase tracking-[0.3em] font-sans text-[16px] md:text-xl border-y border-[#0056B3]/10">
            <div className="marquee-content flex gap-8 whitespace-nowrap items-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF]">
               <span>LONDON</span><span>•</span>
               <span>PARIS</span><span>•</span>
