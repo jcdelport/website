@@ -161,29 +161,30 @@ export default function Home() {
 
           {/* 
             2. THE PRINCIPAL'S PERSPECTIVE
-            Fixed structure: The image is now explicitly contained within the section grid,
-            but floats upwards over the black section boundary cleanly without hitting Hero text.
+            Concept: The Asymmetric Brutalist Split.
+            Complete structural separation. No float overlaps.
           */}
-          <section className="relative w-full bg-bone text-pitch pb-32 px-8 md:px-24 border-none z-20">
+          <section className="relative w-full min-h-[90vh] bg-bone text-pitch py-40 border-none z-20 flex items-center">
              
-             <div className="w-full flex flex-col md:flex-row items-end gap-16 md:gap-32 relative">
+             <div className="w-full flex flex-col md:flex-row items-center block">
                
-               {/* Left Column: Portrait Floating Upwards */}
-               <div className="w-full md:w-[30vw] aspect-[3/4] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] relative -mt-32 md:-mt-[25vh]">
-                 <div className="absolute inset-0 bg-[#0056B3] blur-[100px] opacity-[0.15] -z-10 scale-125 translate-y-12 mix-blend-screen"></div>
-                 <img 
-                   src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" 
-                   alt="Marc Webster Standing"
-                   className="w-full h-[120%] -top-[10%] mb-[10%] absolute object-cover grayscale contrast-[1.4] object-top" 
-                 />
+               {/* Left Column: Bounded Image framing the Atmosphere */}
+               <div className="w-full md:w-[45vw] flex justify-center items-center py-24 md:py-0 border-r border-pitch/10">
+                  <div className="w-[70%] aspect-[3/4] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] relative">
+                    <img 
+                      src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" 
+                      alt="Marc Webster Standing"
+                      className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.3] object-top" 
+                    />
+                  </div>
                </div>
 
-               {/* Right Column: Text block */}
-               <div className="w-full md:w-[45vw] flex flex-col pb-24 md:pb-40 relative z-50">
+               {/* Right Column: Text block "The Law" with massive negative space */}
+               <div className="w-full md:w-[55vw] flex flex-col pl-8 md:pl-[8vw] pr-8 md:pr-16 relative z-50">
                  <h2 className="text-[clamp(3.5rem,6vw,6rem)] font-serif leading-[0.9] mb-12 sub-header-mask">
                    <SplitTextWordHelper text="The Principal's Perspective." />
                  </h2>
-                 <p className="font-sans text-[22px] leading-[1.8] font-light opacity-80 max-w-2xl">
+                 <p className="font-sans text-[24px] leading-[1.8] font-light opacity-90 max-w-2xl text-[#0056B3]">
                     Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
                  </p>
                </div>
