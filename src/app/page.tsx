@@ -74,7 +74,6 @@ export default function Home() {
       
       {/* 
         LOGOMARK: Acting as a "light source" 
-        Blue geometric 'W' anchored in the top left, throwing a strong blue glow 
       */}
       <header className="fixed top-0 left-0 w-full z-50 p-8 flex justify-between items-start pointer-events-none drop-shadow-[0_0_20px_rgba(0,191,255,0.4)]">
         <a href="/" className="pointer-events-auto group">
@@ -121,7 +120,7 @@ export default function Home() {
                <div className="col-span-1 md:col-span-8 flex flex-col gap-8 pt-12">
                  <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF]"></div>
                  <p className="font-sans text-[22px] leading-[1.8] font-light text-white/80 max-w-2xl">
-                   Fifty years of operational mastery. We architect salon enterprises across London, Paris, and Dubai that outlast the trends.
+                   Fifty years of operational mastery. From the established avenues of London and Paris to the emerging skylines of Dubai and Riyadh, we architect salon enterprises that outlast the trends. We don't just open doors; we ensure they never close.
                  </p>
                </div>
             </div>
@@ -161,10 +160,10 @@ export default function Home() {
           </div>
 
           <section className="relative w-full min-h-[80vh] bg-bone text-pitch pt-64 pb-32 px-8 md:px-16 flex flex-col items-end z-0">
-             <div className="w-full md:w-[50%] flex flex-col right-0">
+             <div className="w-full md:w-[50%] flex flex-col right-0 pt-24">
                <h2 className="text-[clamp(3.5rem,6vw,5rem)] font-serif leading-[0.9] mb-12">The Principal's Perspective.</h2>
                <p className="font-sans text-[20px] leading-[1.8] font-light opacity-80 mb-12">
-                  Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
+                  Marc Webster understands creative ambition, but he understands structural weakness even better. After five decades at the helm of international salon operations, his role is to inform your decisions before they become expensive mistakes. This is the elimination of risk through measured judgement and clear numbers.
                </p>
              </div>
           </section>
@@ -177,6 +176,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto mb-32 flex flex-col items-center text-center relative z-10">
             <h2 className="text-[clamp(5rem,10vw,8rem)] font-serif leading-[0.9] mb-8">Total Operational Sovereignty.</h2>
             <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8"></div>
+            <p className="font-sans text-[20px] leading-[1.8] font-light text-white/80 max-w-2xl mt-4">
+              For the investor who demands a finished, high-performance asset. A full turnkey solution for the UK, Europe, and the Middle East.
+            </p>
         </div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
@@ -204,17 +206,28 @@ export default function Home() {
       <section className="relative w-full py-40 px-8 md:px-16 bg-bone text-pitch z-10">
          
          {/* Strategic Audit */}
-         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 mb-40 border-t border-pitch/10 pt-24">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-24 mb-40 border-t border-pitch/10 pt-24">
             <div className="w-full lg:w-[40%] flex flex-col">
-               <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-12">The Preventative Commercial Audit.</h2>
-               <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF]"></div>
+               <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-8">The Preventative Commercial Audit.</h2>
+               <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8"></div>
+               <p className="font-sans text-[20px] leading-[1.8] font-light opacity-80 text-[#0056B3]">
+                 Opening a salon requires belief. Sustaining one requires a clinical understanding of margins.
+               </p>
             </div>
             
-            <div className="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-16 float-img-wrapper bg-white p-12 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] rounded-sm">
-               <h3 className="text-2xl font-serif">Break-Even Accuracy</h3>
-               <h3 className="text-2xl font-serif">Lease Liability</h3>
-               <h3 className="text-2xl font-serif">Cash Flow Resilience</h3>
-               <h3 className="text-2xl font-serif">Structural Viability</h3>
+            <div className="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-16 float-img-wrapper bg-white p-12 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.06)] rounded-sm">
+               <div className="flex flex-col">
+                  <h3 className="text-2xl font-serif mb-4">Break-Even Accuracy</h3>
+               </div>
+               <div className="flex flex-col">
+                  <h3 className="text-2xl font-serif mb-4">Lease Liability</h3>
+               </div>
+               <div className="flex flex-col">
+                  <h3 className="text-2xl font-serif mb-4">Cash Flow Resilience</h3>
+               </div>
+               <div className="flex flex-col">
+                  <h3 className="text-2xl font-serif mb-4">Structural Viability</h3>
+               </div>
             </div>
          </div>
 
@@ -222,17 +235,18 @@ export default function Home() {
          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-24 border-t border-pitch/10 pt-24">
             <div className="w-full lg:w-[40%] flex flex-col">
                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-[#0056B3] mb-6">Digital Infrastructure</span>
-               <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-12">The Digital Nerve Center.</h2>
-               <p className="font-sans text-[20px] leading-[1.8] font-light opacity-80 mb-12">
-                 Full-service integration of CRM, ERP, and Native Mobile Applications.
+               <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-8">The Digital Nerve Center.</h2>
+               <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8"></div>
+               <p className="font-sans text-[20px] leading-[1.8] font-light opacity-80 text-[#0056B3]">
+                 Strategy is nothing without the tools of execution.
                </p>
-               <div className="w-16 h-[2px] bg-gradient-to-r from-[#0056B3] to-[#00BFFF]"></div>
             </div>
             
-            <div className="w-full lg:w-[60%] float-img-wrapper bg-white p-16 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] rounded-sm flex flex-col gap-12">
+            <div className="w-full lg:w-[60%] float-img-wrapper bg-white p-16 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.06)] rounded-sm flex flex-col gap-12">
                <h3 className="text-4xl font-serif border-b border-pitch/10 pb-6 hover:text-[#0056B3] transition-colors">Integrated CRM</h3>
                <h3 className="text-4xl font-serif border-b border-pitch/10 pb-6 hover:text-[#0056B3] transition-colors">ERP Ecosystem</h3>
-               <h3 className="text-4xl font-serif pb-6 hover:text-[#0056B3] transition-colors">Native Mobile App</h3>
+               <h3 className="text-4xl font-serif border-b border-pitch/10 pb-6 hover:text-[#0056B3] transition-colors">Native Mobile App</h3>
+               <h3 className="text-4xl font-serif pb-6 hover:text-[#0056B3] transition-colors">E-commerce Backbone</h3>
             </div>
          </div>
 
