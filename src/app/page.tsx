@@ -143,19 +143,19 @@ export default function Home() {
                </div>
             </div>
 
-            {/* The Law (Highest Z, Mix Blend for overlap, massive white space separation) */}
+            {/* The Law (Highest Z, Mix Blend for overlap) */}
             <div className="relative z-30 w-full flex flex-col mix-blend-difference pointer-events-none">
                <h1 className="text-[clamp(4.5rem,10vw,12rem)] font-serif leading-[0.9] max-w-6xl pointer-events-auto selection:bg-white selection:text-black">
                   <SplitTextWordHelper text="Passion starts the movement. Strategy sustains the legacy." />
                </h1>
                
-               {/* massive white space separation */}
-               <div className="mt-[15vh] w-full md:w-[50vw] flex flex-col gap-8">
+               {/* Anchored Sub-copy - structured cleanly beneath the header */}
+               <div className="mt-16 md:mt-24 w-full md:w-[45vw] flex flex-col gap-8 md:pl-2">
                  <p className="font-sans text-[26px] leading-[1.6] font-light text-white/90">
                    From first-concept inception to the optimization of established global brands. We architect and refine salon enterprises across the UK, Europe, and the Middle East.
                  </p>
-                 <div className="w-16 h-[2px] bg-white"></div>
-                 <p className="font-sans text-[22px] leading-[1.8] font-light text-white/90">
+                 <div className="w-16 h-[2px] bg-white/40"></div>
+                 <p className="font-sans text-[20px] leading-[1.8] font-light text-white/70">
                    Fifty years of mastery. We provide the clinical foresight required to build from zero or scale with certainty.
                  </p>
                </div>
