@@ -161,8 +161,8 @@ export default function Home() {
                </div>
             </div>
 
-            <div className="absolute left-8 md:left-[5vw] bottom-[10vh] z-20 pointer-events-none opacity-20">
-               <h2 className="text-[clamp(10rem,25vw,30rem)] font-serif leading-[0.7] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF]">
+            <div className="relative mt-auto mb-12 w-full md:pl-[5vw] z-10 pointer-events-none opacity-20 pt-32 hidden md:block">
+               <h2 className="text-[clamp(10rem,20vw,26rem)] font-serif leading-[0.8] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF]">
                  50<br/>YEARS
                </h2>
             </div>
