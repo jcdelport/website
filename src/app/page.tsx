@@ -161,27 +161,35 @@ export default function Home() {
 
           {/* 
             2. THE PRINCIPAL'S PERSPECTIVE
-            The portrait floating aggressively halfway across the section boundary, but smaller (max 35% width desktop).
+            Fixed structure: The image is now explicitly contained within the section grid,
+            but floats upwards over the black section boundary cleanly without hitting Hero text.
           */}
-          <div className="absolute left-[5%] md:left-[10vw] top-[115vh] w-[80%] md:w-[35vw] aspect-[3/4] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)]">
-             <div className="absolute inset-0 bg-[#0056B3] blur-[150px] opacity-10 -z-10 scale-125 translate-y-12"></div>
-             <img 
-               src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" 
-               alt="Marc Webster Standing"
-               className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.4] object-top" 
-             />
-          </div>
+          <section className="relative w-full bg-bone text-pitch pb-32 px-8 md:px-24 border-none z-20">
+             
+             <div className="w-full flex flex-col md:flex-row items-end gap-16 md:gap-32 relative">
+               
+               {/* Left Column: Portrait Floating Upwards */}
+               <div className="w-full md:w-[30vw] aspect-[3/4] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] relative -mt-32 md:-mt-[25vh]">
+                 <div className="absolute inset-0 bg-[#0056B3] blur-[100px] opacity-[0.15] -z-10 scale-125 translate-y-12 mix-blend-screen"></div>
+                 <img 
+                   src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" 
+                   alt="Marc Webster Standing"
+                   className="w-full h-[120%] -top-[10%] mb-[10%] absolute object-cover grayscale contrast-[1.4] object-top" 
+                 />
+               </div>
 
-          <section className="relative w-full min-h-[90vh] bg-bone text-pitch pt-[30vh] pb-32 px-8 md:px-24 flex flex-col items-end z-0">
-             {/* 15vw breathing room enforced by restricting text to the far right */}
-             <div className="w-full md:w-[45vw] flex flex-col right-0 relative z-50">
-               <h2 className="text-[clamp(3.5rem,6vw,6rem)] font-serif leading-[0.9] mb-16 sub-header-mask">
-                 <SplitTextWordHelper text="The Principal's Perspective." />
-               </h2>
-               <p className="font-sans text-[24px] leading-[1.8] font-light opacity-90 max-w-2xl">
-                  Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
-               </p>
+               {/* Right Column: Text block */}
+               <div className="w-full md:w-[45vw] flex flex-col pb-24 md:pb-40 relative z-50">
+                 <h2 className="text-[clamp(3.5rem,6vw,6rem)] font-serif leading-[0.9] mb-12 sub-header-mask">
+                   <SplitTextWordHelper text="The Principal's Perspective." />
+                 </h2>
+                 <p className="font-sans text-[22px] leading-[1.8] font-light opacity-80 max-w-2xl">
+                    Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
+                 </p>
+               </div>
+             
              </div>
+             
           </section>
       </div>
 
