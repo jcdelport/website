@@ -208,24 +208,24 @@ export default function Home() {
             </p>
         </div>
 
-        {/* Staggered Vertical Cards using Asymmetric Placement */}
-        <div className="max-w-7xl mx-auto flex flex-col gap-32 relative z-10">
+        {/* Aligned Grid Layout */}
+        <div className="max-w-[90vw] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative z-10 w-full">
            
-           <div className="relative w-full md:w-[45%] ml-auto bg-black/60 backdrop-blur-md p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm">
+           <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 01</span>
-             <h3 className="text-5xl font-serif leading-[1]">Concept &amp; Curation.</h3>
+             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">Concept &amp; Curation.</h3>
            </div>
 
-           <div className="relative w-full md:w-[45%] mr-auto bg-black/60 backdrop-blur-md p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm">
+           <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              {/* 10% Radial Glow applied to cards for subtle depth */}
              <div className="absolute inset-0 bg-[#0056B3] blur-[150px] opacity-[0.05] -z-10 rounded-full scale-150"></div>
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 02</span>
-             <h3 className="text-5xl font-serif leading-[1]">Structural Engineering.</h3>
+             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">Structural Engineering.</h3>
            </div>
 
-           <div className="relative w-full md:w-[45%] ml-auto bg-black/60 backdrop-blur-md p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm">
+           <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 03</span>
-             <h3 className="text-5xl font-serif leading-[1]">The Digital Launch.</h3>
+             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">The Digital Launch.</h3>
            </div>
 
         </div>
