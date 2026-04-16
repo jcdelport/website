@@ -141,7 +141,7 @@ export default function Home() {
                {/* Image Cropper Wrapper */}
                <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-sm">
                  <img 
-                    src="/salon_interior_monochrome_1776349128891.png" 
+                    src="/Images/salon_interior.png" 
                     alt="High End Salon Interior"
                     className="w-full h-[120%] -top-[10%] object-cover grayscale absolute scale-[1.05]" 
                  />
