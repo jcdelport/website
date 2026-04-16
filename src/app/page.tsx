@@ -131,13 +131,16 @@ export default function Home() {
           <section className="relative w-full min-h-[140vh] bg-pitch text-white flex flex-col pt-56 px-8 md:px-24 overflow-hidden z-10">
             
             {/* The Atmosphere (Controlled size, strong shadow, deep Z) */}
-            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[35vw] h-[70vh] md:h-[90vh] float-img-wrapper z-0 shadow-[0_30px_60px_-15px_rgba(0,0,0,1)]">
-               <div className="absolute inset-0 bg-[#0056B3] blur-[120px] opacity-10 -z-10 scale-125 translate-y-12"></div>
-               <img 
-                  src="/Images/marc_editorial.png" 
-                  alt="Marc Webster Seated"
-                  className="w-full h-[120%] -top-[10%] mb-[15vw] absolute object-cover grayscale contrast-[1.3] brightness-90" 
-               />
+            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[35vw] h-[70vh] md:h-[90vh] float-img-wrapper z-0">
+               <div className="absolute inset-0 bg-[#0056B3] blur-[120px] opacity-20 -z-10 scale-125 translate-y-12"></div>
+               {/* Image Cropper Wrapper (Removes baked-in black border from source PNG) */}
+               <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-sm">
+                 <img 
+                    src="/Images/marc_editorial.png" 
+                    alt="Marc Webster Seated"
+                    className="w-full h-[120%] -top-[10%] mb-[15vw] absolute object-cover grayscale contrast-[1.3] brightness-90 scale-[1.06]" 
+                 />
+               </div>
             </div>
 
             {/* The Law (Highest Z, Mix Blend for overlap, massive white space separation) */}
