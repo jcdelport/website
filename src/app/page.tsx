@@ -299,7 +299,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-[1px] bg-white opacity-40 mb-8 mx-auto"></div>
             <p className="font-sans text-[22px] leading-[1.8] font-light max-w-2xl text-white/80">
-              We build the complete operational brain of the modern salon. A bespoke, integrated ecosystem designed for high-volume, high-margin management.
+              We engineer the complete operational brain of the modern salon. A bespoke, full turn-key ecosystem designed specifically for high-volume, high-margin management.
             </p>
          </div>
 
