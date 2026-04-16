@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import EcosystemStack from "../components/EcosystemStack";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -234,7 +235,7 @@ export default function Home() {
       {/* 4. THE STRATEGIC AUDIT & DIGITAL NERVE CENTER */}
       <section className="relative w-full py-40 px-8 md:px-24 bg-bone text-pitch z-10 font-light">
          
-         {/* Strategic Audit */}
+         {/* Preventative Commercial Audit */}
          <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row gap-24 mb-56 pt-24 border-t border-pitch/10">
             <div className="w-full md:w-[45%] flex flex-col">
                <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-12 sub-header-mask pb-4 min-h-[4em]">
@@ -253,28 +254,26 @@ export default function Home() {
                <h3 className="text-3xl font-serif border-b border-pitch/20 pb-8 hover:text-[#0056B3] transition-colors cursor-default">Structural Viability</h3>
             </div>
          </div>
+      </section>
 
-         {/* Digital Nerve Center */}
-         <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row gap-24 pt-24 border-t border-pitch/10">
-            <div className="w-full md:w-[45%] flex flex-col">
-               <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-[#0056B3] mb-6">Digital Infrastructure</span>
-               <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-12 sub-header-mask pb-4 min-h-[2em]">
-                 <SplitTextWordHelper text="The Digital Nerve Center." />
-               </h2>
-               <div className="w-16 h-[1px] bg-pitch/40 mb-8"></div>
-               <p className="font-sans text-[22px] leading-[1.8] opacity-90 max-w-md">
-                 Strategy is nothing without the tools of execution.
-               </p>
-            </div>
-            
-            <div className="w-full md:w-[50%] ml-auto flex flex-col float-img-wrapper bg-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.04)] p-16 md:p-24 justify-center gap-16 rounded-sm">
-               <h3 className="text-4xl font-serif text-center hover:text-[#0056B3] transition-colors cursor-default">Integrated CRM</h3>
-               <h3 className="text-4xl font-serif text-center hover:text-[#0056B3] transition-colors cursor-default">ERP Ecosystem</h3>
-               <h3 className="text-4xl font-serif text-center hover:text-[#0056B3] transition-colors cursor-default">Native Mobile App</h3>
-               <h3 className="text-4xl font-serif text-center hover:text-[#0056B3] transition-colors cursor-default">E-commerce Backbone</h3>
-            </div>
+      {/* NEW 3D STACK SECTION (Pitch Black to highlight the isometric lighting) */}
+      <section className="relative w-full overflow-hidden bg-pitch text-white py-40 z-10 border-t border-white/10">
+         
+         <div className="max-w-[90vw] mx-auto flex flex-col items-center text-center pb-24">
+            <span className="font-mono text-sm uppercase font-bold tracking-[0.3em] text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-6 block drop-shadow-[0_0_10px_rgba(0,191,255,0.4)]">Digital Infrastructure</span>
+            <h2 className="text-[clamp(4.5rem,10vw,7rem)] font-serif leading-[0.9] mb-12 sub-header-mask text-white">
+              <SplitTextWordHelper text="The Digital Nerve Center." />
+            </h2>
+            <div className="w-24 h-[1px] bg-white opacity-40 mb-8 mx-auto"></div>
+            <p className="font-sans text-[22px] leading-[1.8] font-light max-w-2xl text-white/80">
+              Strategy is nothing without the tools of execution. 
+              The complete operational stack, fully synchronized.
+            </p>
          </div>
 
+         <div className="w-full pb-32">
+            <EcosystemStack />
+         </div>
       </section>
 
       {/* 5. THE ENQUIRY PORTAL (Extreme Minimalist White) */}
