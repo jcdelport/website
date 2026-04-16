@@ -32,9 +32,9 @@
 
 .scene {
   position: relative;
-  min-height: 650px;
+  min-height: 750px;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -103,15 +103,15 @@
 }
 
 .layer1 { top: 0px;   z-index: 8; --grad: var(--l1-grad); --side: var(--l1-side); animation-delay: 0.8s; }
-.layer2 { top: 115px;  z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
-.layer3 { top: 230px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
-.layer4 { top: 345px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
+.layer2 { top: 160px; z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
+.layer3 { top: 320px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
+.layer4 { top: 480px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
 
 /* Text Calls */
 .desktopOnly {
   position: absolute;
-  left: 420px;
-  width: 500px;
+  left: 450px;
+  width: 600px;
 }
 
 .callout {
@@ -188,14 +188,14 @@
   font-size: 1.05rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.7);
-  max-width: 460px;
+  max-width: 550px;
   transition: all 0.3s ease;
 }
 
 .c01 { top: 0px;   animation-delay: 0.8s; }
-.c02 { top: 115px;  animation-delay: 0.7s; }
-.c03 { top: 230px; animation-delay: 0.6s; }
-.c04 { top: 345px; animation-delay: 0.5s; }
+.c02 { top: 160px; animation-delay: 0.7s; }
+.c03 { top: 320px; animation-delay: 0.6s; }
+.c04 { top: 480px; animation-delay: 0.5s; }
 
 /* Mobiles Lists mapped to Blue Gradients */
 .mobileList {
@@ -241,9 +241,10 @@
 }
 
 @media (max-width: 1024px) {
-  .scene { max-width: 800px; min-height: 600px; }
+  .scene { max-width: 800px; min-height: 750px; }
   .stackCore { left: 0px; transform: scale(0.85); top: -20px; }
-  .desktopOnly { left: 260px; width: 500px; }
+  .desktopOnly { left: 300px; width: 500px; }
+  .desktopOnly .desc { max-width: 400px; }
   .callout::before { left: -75px; width: 55px; }
   .callout.active::before { width: 70px; }
 }
@@ -251,6 +252,6 @@
 @media (max-width: 840px) {
   .desktopOnly { display: none; }
   .scene { min-height: auto; display: flex; flex-direction: column; align-items: center; margin-top: 0; }
-  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 400px; transform: scale(0.9); }
+  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 550px; transform: scale(0.9); }
   .mobileList { display: grid; width: 100%; max-width: 600px; }
 }
