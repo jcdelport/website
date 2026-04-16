@@ -32,7 +32,7 @@
 
 .scene {
   position: relative;
-  min-height: 750px;
+  min-height: 1100px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -106,6 +106,8 @@
 .layer2 { top: 160px; z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
 .layer3 { top: 320px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
 .layer4 { top: 480px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
+.layer5 { top: 640px; z-index: 4; --grad: var(--l5-grad); --side: var(--l5-side); animation-delay: 0.4s; }
+.layer6 { top: 800px; z-index: 3; --grad: var(--l6-grad); --side: var(--l6-side); animation-delay: 0.3s; }
 
 /* Text Calls */
 .desktopOnly {
@@ -169,6 +171,8 @@
 .callout.c02 .num { background: var(--l2-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .callout.c03 .num { background: var(--l3-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .callout.c04 .num { background: var(--l4-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.callout.c05 .num { background: var(--l5-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.callout.c06 .num { background: var(--l6-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .textWrapper {
   display: flex;
@@ -196,6 +200,8 @@
 .c02 { top: 160px; animation-delay: 0.7s; }
 .c03 { top: 320px; animation-delay: 0.6s; }
 .c04 { top: 480px; animation-delay: 0.5s; }
+.c05 { top: 640px; animation-delay: 0.4s; }
+.c06 { top: 800px; animation-delay: 0.3s; }
 
 /* Mobiles Lists mapped to Blue Gradients */
 .mobileList {
@@ -241,7 +247,7 @@
 }
 
 @media (max-width: 1024px) {
-  .scene { max-width: 800px; min-height: 750px; }
+  .scene { max-width: 800px; min-height: 1100px; }
   .stackCore { left: 0px; transform: scale(0.85); top: -20px; }
   .desktopOnly { left: 300px; width: 500px; }
   .desktopOnly .desc { max-width: 400px; }
@@ -252,6 +258,6 @@
 @media (max-width: 840px) {
   .desktopOnly { display: none; }
   .scene { min-height: auto; display: flex; flex-direction: column; align-items: center; margin-top: 0; }
-  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 550px; transform: scale(0.9); }
+  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 850px; transform: scale(0.9); }
   .mobileList { display: grid; width: 100%; max-width: 600px; }
 }

@@ -120,6 +120,11 @@ export default function Home() {
               <polygon points="70,0 100,0 75,80" fill="url(#logoRight)" />
           </svg>
         </a>
+        <div className="pointer-events-auto flex items-center pr-20 md:pr-24">
+           <a href="#enquiry" className="font-mono text-xs uppercase tracking-[0.2em] px-6 py-3 border border-white/20 text-white hover:bg-white hover:text-pitch transition-colors mix-blend-difference hidden md:block">
+              Book a Strategy Call
+           </a>
+        </div>
       </header>
 
       <Navigation />
@@ -131,14 +136,14 @@ export default function Home() {
           <section className="relative w-full min-h-[140vh] bg-pitch text-white flex flex-col pt-56 px-8 md:px-24 overflow-hidden z-10">
             
             {/* The Atmosphere (Controlled size, strong shadow, deep Z) */}
-            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[35vw] h-[70vh] md:h-[90vh] float-img-wrapper z-0">
+            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[45vw] h-[60vh] md:h-[80vh] float-img-wrapper z-0">
                <div className="absolute inset-0 bg-[#0056B3] blur-[120px] opacity-20 -z-10 scale-125 translate-y-12"></div>
-               {/* Image Cropper Wrapper (Removes baked-in black border from source PNG) */}
+               {/* Image Cropper Wrapper */}
                <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-sm">
                  <img 
-                    src="/Images/marc_editorial.png" 
-                    alt="Marc Webster Seated"
-                    className="w-full h-[120%] -top-[10%] mb-[15vw] absolute object-cover grayscale contrast-[1.3] brightness-90 scale-[1.06]" 
+                    src="/salon_interior_monochrome_1776349128891.png" 
+                    alt="High End Salon Interior"
+                    className="w-full h-[120%] -top-[10%] object-cover grayscale absolute scale-[1.05]" 
                  />
                </div>
             </div>
@@ -146,18 +151,22 @@ export default function Home() {
             {/* The Law (Highest Z, Mix Blend for overlap) */}
             <div className="relative z-30 w-full flex flex-col mix-blend-difference pointer-events-none">
                <h1 className="text-[clamp(4.5rem,10vw,12rem)] font-serif leading-[0.9] max-w-6xl pointer-events-auto selection:bg-white selection:text-black">
-                  <SplitTextWordHelper text="Passion starts the movement. Strategy sustains the legacy." />
+                  <SplitTextWordHelper text="Passion opens salons. Strategy keeps them open." />
                </h1>
                
                {/* Anchored Sub-copy - structured cleanly beneath the header */}
-               <div className="mt-16 md:mt-24 w-full md:w-[45vw] flex flex-col gap-8 md:pl-2">
+               <div className="mt-16 md:mt-24 w-full md:w-[45vw] flex flex-col gap-8 md:pl-2 pointer-events-auto">
                  <p className="font-sans text-[26px] leading-[1.6] font-light text-white/90">
-                   From first-concept inception to the optimization of established global brands. We architect and refine salon enterprises across the UK, Europe, and the Middle East.
+                   Independent commercial oversight for the modern salon era. We translate five decades of industry legacy into the structural discipline required for 2026.
                  </p>
-                 <div className="w-16 h-[2px] bg-white/40"></div>
-                 <p className="font-sans text-[20px] leading-[1.8] font-light text-white/70">
-                   Fifty years of mastery. We provide the clinical foresight required to build from zero or scale with certainty.
-                 </p>
+                 <div className="flex gap-4 items-center">
+                    <a href="#enquiry" className="font-mono text-xs uppercase tracking-[0.2em] px-8 py-4 bg-white text-pitch hover:bg-white/80 transition-colors">
+                       Book a Strategy Call
+                    </a>
+                    <a href="#audit" className="font-mono text-xs uppercase tracking-[0.2em] px-8 py-4 border border-white/20 text-white hover:bg-white/10 transition-colors">
+                       Explore the Audit
+                    </a>
+                 </div>
                </div>
             </div>
 
@@ -170,37 +179,37 @@ export default function Home() {
           </section>
 
           {/* 
-            2. THE PRINCIPAL'S PERSPECTIVE
-            Concept: The Asymmetric Brutalist Split.
-            Complete structural separation. No float overlaps.
+            2. THE COMMERCIAL REALITY
+            Concept: Asymmetric Content Block for "The Friction of Growth"
           */}
-          <section id="principal" className="relative w-full min-h-[90vh] bg-bone text-pitch py-40 border-none z-20 flex items-center">
-             
-             <div className="w-full flex flex-col md:flex-row items-center block">
-               
-               {/* Left Column: Bounded Image framing the Atmosphere */}
-               <div className="w-full md:w-[45vw] flex justify-center items-center py-24 md:py-0 border-r border-pitch/10">
-                  <div className="w-[70%] aspect-[3/4] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] relative">
-                    <img 
-                      src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" 
-                      alt="Marc Webster Standing"
-                      className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.3] object-top" 
-                    />
-                  </div>
-               </div>
-
-               {/* Right Column: Text block "The Law" with massive negative space */}
-               <div className="w-full md:w-[55vw] flex flex-col pl-8 md:pl-[8vw] pr-8 md:pr-16 relative z-50">
+          <section id="reality" className="relative w-full bg-bone text-pitch py-40 z-20 flex flex-col md:flex-row gap-16 px-8 md:px-24">
+             <div className="w-full md:w-[45%] flex flex-col md:pt-16">
                  <h2 className="text-[clamp(3.5rem,6vw,6rem)] font-serif leading-[0.9] mb-12 sub-header-mask">
-                   <SplitTextWordHelper text="The Principal's Perspective." />
+                    <SplitTextWordHelper text="The Friction of Growth." />
                  </h2>
-                 <p className="font-sans text-[24px] leading-[1.8] font-light opacity-[0.85] max-w-2xl text-pitch">
-                    Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
+                 <p className="font-sans text-[22px] leading-[1.8] font-light opacity-[0.85] max-w-xl text-pitch">
+                    Opening a salon requires belief. Sustaining one requires discipline. In an era where labor costs climb toward 50% and the "freelance shift" disrupts traditional loyalty, creative brilliance is no longer a safety net.
                  </p>
-               </div>
-             
              </div>
              
+             <div className="w-full md:w-[50%] flex flex-col gap-16 md:pt-40 md:pl-16 md:border-l border-pitch/10 max-md:mt-16">
+                 <div>
+                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">The Wage Trap</h3>
+                    <p className="font-sans text-[18px] opacity-70 font-light">Navigating the £12.71+ National Living Wage while maintaining profit.</p>
+                 </div>
+                 <div>
+                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">The Hybrid Shift</h3>
+                    <p className="font-sans text-[18px] opacity-70 font-light">Balancing stylist autonomy with business security.</p>
+                 </div>
+                 <div>
+                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">Lease Exposure</h3>
+                    <p className="font-sans text-[18px] opacity-70 font-light">Protecting capital from aggressive "Schedule of Condition" clauses.</p>
+                 </div>
+                 <div>
+                    <h3 className="text-3xl font-serif mb-4 text-[#0056B3]">System Over Personality</h3>
+                    <p className="font-sans text-[18px] opacity-70 font-light">Moving from individual-led to system-driven operations.</p>
+                 </div>
+             </div>
           </section>
       </div>
 
@@ -261,20 +270,20 @@ export default function Home() {
             
             <div className="w-full md:w-[50%] ml-auto flex flex-col gap-12 float-img-wrapper mt-auto">
                <div className="border-b border-pitch/20 pb-8 group cursor-default">
-                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Break-Even Accuracy</h3>
-                 <p className="font-sans text-[18px] opacity-70 font-light">Granular analysis of chair-hour profitability.</p>
-               </div>
-               <div className="border-b border-pitch/20 pb-8 group cursor-default">
-                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Lease Liability</h3>
-                 <p className="font-sans text-[18px] opacity-70 font-light">Strategic auditing of rental exposure in premium footprints.</p>
-               </div>
-               <div className="border-b border-pitch/20 pb-8 group cursor-default">
-                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Cash Flow Resilience</h3>
-                 <p className="font-sans text-[18px] opacity-70 font-light">Stress-testing liquidity against seasonal volatility.</p>
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Financial Resilience</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Break-even accuracy and 2026 tax alignment.</p>
                </div>
                <div className="border-b border-pitch/20 pb-8 group cursor-default">
                  <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Structural Viability</h3>
-                 <p className="font-sans text-[18px] opacity-70 font-light">Re-aligning creative talent with commercial discipline.</p>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Sustainable commission tiers and employment modeling.</p>
+               </div>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Liability Shield</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Lease break-choice reviews and operational risk assessment.</p>
+               </div>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">The Output</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">A comprehensive Strategy Report with defined financial benchmarks.</p>
                </div>
             </div>
          </div>
@@ -303,11 +312,11 @@ export default function Home() {
       <section id="enquiry" className="relative w-full pt-40 pb-56 px-8 md:px-24 bg-white text-pitch z-20">
         <div className="max-w-5xl mx-auto flex flex-col">
            
-           <h2 className="text-[clamp(5rem,10vw,8rem)] font-serif leading-[0.9] mb-8 sub-header-mask min-h-[3em] pb-4">
-              <SplitTextWordHelper text="Independent Commercial Clarity." />
+           <h2 className="text-[clamp(5rem,10vw,8rem)] font-serif leading-[0.9] mb-8 sub-header-mask min-h-[3em] md:min-h-[2em] pb-4">
+              <SplitTextWordHelper text="Independent Oversight for Salon Capital." />
            </h2>
            <p className="font-sans text-[22px] leading-[1.8] font-light opacity-[0.65] mb-24 max-w-2xl">
-              Confidential due diligence and ongoing oversight for providers of capital. We ensure investment decisions are supported by realistic operating assumptions.
+              We act as your Commercial Concierge, ensuring break-even accuracy and asset protection for private and family-backed ventures.
            </p>
 
            <form className="flex flex-col gap-24 font-sans w-full max-w-4xl">
@@ -372,8 +381,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BRANDING & IDENTITY */}
+      <section className="relative w-full bg-bone text-pitch py-40 border-t border-pitch/10 z-20 px-8 md:px-24 flex flex-col md:flex-row items-center gap-16 float-img-wrapper overflow-hidden">
+          <div className="w-full md:w-[50%] flex flex-col shrink-0">
+             <h2 className="text-[clamp(4.5rem,8vw,7rem)] font-serif leading-[0.9] mb-8 sub-header-mask pb-4 min-h-[3em] md:min-h-auto">
+                <SplitTextWordHelper text="Branding with Substance." />
+             </h2>
+             <p className="font-sans text-[22px] leading-[1.8] opacity-90 max-w-xl font-light mb-12">
+                We refine your brand architecture to resonate with high-net-worth demographics and attract the top 5% of talent.
+             </p>
+             <div className="flex flex-col gap-4 font-mono text-xs tracking-widest text-[#0056B3] uppercase">
+                <span>• Strategic Positioning</span>
+                <span>• Employer Branding</span>
+                <span>• Omnichannel Consistency</span>
+             </div>
+          </div>
+          <div className="w-[85vw] md:w-[40vw] ml-auto h-[60vh] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] border border-pitch/5 relative mt-16 md:mt-0">
+             <img src="/Images/marc_editorial.png" alt="Webster Branding" className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.3] object-top" />
+          </div>
+      </section>
+
+      {/* THE PRINCIPAL */}
+      <section id="principal" className="relative w-full bg-pitch text-white py-40 border-t border-[#0056B3]/30 z-20 px-8 md:px-24 flex flex-col items-center text-center">
+         <h2 className="text-[clamp(4.5rem,10vw,8rem)] font-serif leading-[0.9] mb-12 sub-header-mask text-center min-h-[1.5em] pb-4">
+            <SplitTextWordHelper text="Five Decades. Zero Fluff." />
+         </h2>
+         <p className="font-sans text-[22px] leading-[1.8] font-light text-white/80 max-w-3xl mb-16">
+            Marc Webster is a practitioner, not a coach. From the 1970s to the AI-driven landscape of 2026, he has navigated every economic cycle.
+         </p>
+         <blockquote className="font-serif text-3xl md:text-5xl leading-[1.4] max-w-5xl mx-auto italic text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF]">
+            "My role is to ensure that experience informs your decisions before they become expensive."
+         </blockquote>
+      </section>
+
       {/* 6. GLOBAL FOOTER (Pitch Black with Scroll Ticker) */}
-      <footer className="w-full bg-pitch text-white border-t-[1px] border-[#0056B3]/30 relative z-30 pt-24 pb-12">
+      <footer className="w-full bg-pitch text-white border-t-[1px] border-[#0056B3]/30 relative z-30 pt-32 pb-12">
+        <div className="max-w-4xl mx-auto text-center mb-32 flex flex-col items-center pointer-events-auto">
+             <h3 className="font-serif text-5xl md:text-7xl mb-8 leading-[1.2]">Experience is expensive.<br/>Hindsight is free.</h3>
+             <p className="font-sans text-xl opacity-70 font-light mb-12 max-w-xl mx-auto">Don't wait for a crisis to check your foundations.</p>
+             <a href="#enquiry" className="font-mono text-xs tracking-[0.2em] font-bold text-pitch bg-white uppercase px-12 py-6 shadow-[0_20px_40px_-5px_rgba(255,255,255,0.2)] hover:scale-[1.03] transition-transform w-max inline-block">SECURE YOUR STRATEGY REVIEW</a>
+             <span className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mt-16 block">Confidentiality Guaranteed for Investors and Founders.</span>
+        </div>
+        
         <div className="w-full flex justify-center mb-16 px-8 pointer-events-auto">
           <svg viewBox="0 0 100 80" className="w-[80px] md:w-[120px] h-auto drop-shadow-[0_0_30px_rgba(0,191,255,0.4)]" xmlns="http://www.w3.org/2000/svg">
               <defs>
