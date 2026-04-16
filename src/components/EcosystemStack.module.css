@@ -32,7 +32,7 @@
 
 .scene {
   position: relative;
-  min-height: 850px;
+  min-height: 1050px;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -103,13 +103,13 @@
 }
 
 .layer1 { top: 0px;   z-index: 8; --grad: var(--l1-grad); --side: var(--l1-side); animation-delay: 0.8s; }
-.layer2 { top: 85px;  z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
-.layer3 { top: 170px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
-.layer4 { top: 255px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
-.layer5 { top: 340px; z-index: 4; --grad: var(--l5-grad); --side: var(--l5-side); animation-delay: 0.4s; }
-.layer6 { top: 425px; z-index: 3; --grad: var(--l6-grad); --side: var(--l6-side); animation-delay: 0.3s; }
-.layer7 { top: 510px; z-index: 2; --grad: var(--l7-grad); --side: var(--l7-side); animation-delay: 0.2s; }
-.layer8 { top: 595px; z-index: 1; --grad: var(--l8-grad); --side: var(--l8-side); animation-delay: 0.1s; }
+.layer2 { top: 115px;  z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
+.layer3 { top: 230px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
+.layer4 { top: 345px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
+.layer5 { top: 460px; z-index: 4; --grad: var(--l5-grad); --side: var(--l5-side); animation-delay: 0.4s; }
+.layer6 { top: 575px; z-index: 3; --grad: var(--l6-grad); --side: var(--l6-side); animation-delay: 0.3s; }
+.layer7 { top: 690px; z-index: 2; --grad: var(--l7-grad); --side: var(--l7-side); animation-delay: 0.2s; }
+.layer8 { top: 805px; z-index: 1; --grad: var(--l8-grad); --side: var(--l8-side); animation-delay: 0.1s; }
 
 /* Text Calls */
 .desktopOnly {
@@ -187,27 +187,27 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   letter-spacing: -0.01em;
   transition: all 0.3s ease;
 }
 
 .desc {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.5);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.7);
   max-width: 460px;
   transition: all 0.3s ease;
 }
 
 .c01 { top: 0px;   animation-delay: 0.8s; }
-.c02 { top: 85px;  animation-delay: 0.7s; }
-.c03 { top: 170px; animation-delay: 0.6s; }
-.c04 { top: 255px; animation-delay: 0.5s; }
-.c05 { top: 340px; animation-delay: 0.4s; }
-.c06 { top: 425px; animation-delay: 0.3s; }
-.c07 { top: 510px; animation-delay: 0.2s; }
-.c08 { top: 595px; animation-delay: 0.1s; }
+.c02 { top: 115px;  animation-delay: 0.7s; }
+.c03 { top: 230px; animation-delay: 0.6s; }
+.c04 { top: 345px; animation-delay: 0.5s; }
+.c05 { top: 460px; animation-delay: 0.4s; }
+.c06 { top: 575px; animation-delay: 0.3s; }
+.c07 { top: 690px; animation-delay: 0.2s; }
+.c08 { top: 805px; animation-delay: 0.1s; }
 
 /* Mobiles Lists mapped to Blue Gradients */
 .mobileList {
@@ -253,7 +253,7 @@
 }
 
 @media (max-width: 1024px) {
-  .scene { max-width: 800px; min-height: 750px; }
+  .scene { max-width: 800px; min-height: 950px; }
   .stackCore { left: 0px; transform: scale(0.85); top: -20px; }
   .desktopOnly { left: 260px; width: 500px; }
   .callout::before { left: -75px; width: 55px; }
@@ -263,6 +263,6 @@
 @media (max-width: 840px) {
   .desktopOnly { display: none; }
   .scene { min-height: auto; display: flex; flex-direction: column; align-items: center; margin-top: 0; }
-  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 620px; transform: scale(0.9); }
+  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 850px; transform: scale(0.9); }
   .mobileList { display: grid; width: 100%; max-width: 600px; }
 }
