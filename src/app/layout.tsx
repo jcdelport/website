@@ -20,10 +20,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://webster-45fec.web.app"),
   title: "WEBSTER ADVISORY | High-Performance Salon Sovereignty",
-  description: "Total Operational Sovereignty and Clinical Commercial Clarity",
+  description: "Total Operational Sovereignty and Clinical Commercial Clarity. We build bespoke, full turn-key digital ecosystems for the modern salon.",
+  keywords: ["Salon Advisory", "Turnkey Salon Builder", "Commercial Audit", "Salon Investment", "Hair Salon Infrastructure", "Webster Advisory", "Omnichannel Booking"],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "WEBSTER ADVISORY",
-    description: "Total Operational Sovereignty and Clinical Commercial Clarity",
+    title: "WEBSTER ADVISORY | Commercial Clarity",
+    description: "Total Operational Sovereignty and Clinical Commercial Clarity for Founders and Investors.",
     url: "https://webster-45fec.web.app",
     siteName: "WEBSTER ADVISORY",
     locale: "en_GB",
@@ -32,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "WEBSTER ADVISORY",
-    description: "Total Operational Sovereignty and Clinical Commercial Clarity",
+    description: "Total Operational Sovereignty and Clinical Commercial Clarity.",
   },
 };
 

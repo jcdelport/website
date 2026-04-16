@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webster-45fec.web.app/sitemap.xml

@@ -30,6 +30,18 @@ export default function Home() {
   const [profile, setProfile] = useState("");
   const [location, setLocation] = useState("");
   const [scope, setScope] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle"|"success">("idle");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitStatus("success");
+      setTimeout(() => setSubmitStatus("idle"), 4000); // reset visual state
+    }, 1500);
+  };
 
   useGSAP(() => {
     // 1. HERO STAGGERED REVEAL
@@ -319,7 +331,7 @@ export default function Home() {
               We act as your Commercial Concierge, ensuring break-even accuracy and asset protection for private and family-backed ventures.
            </p>
 
-           <form className="flex flex-col gap-24 font-sans w-full max-w-4xl">
+           <form onSubmit={handleSubmit} className="flex flex-col gap-24 font-sans w-full max-w-4xl">
               
               <input 
                  type="text" 
@@ -373,8 +385,18 @@ export default function Home() {
                  className="bg-transparent border-0 border-b-[1px] border-[#0056B3]/30 p-6 pl-0 text-pitch font-sans text-2xl font-light focus:ring-0 focus:outline-none focus:border-[#0056B3] transition-all placeholder-pitch/10 rounded-none w-full mt-4 resize-none"
               />
 
-              <button type="submit" className="bg-pitch text-white px-16 py-6 rounded-none text-[12px] tracking-[0.3em] uppercase font-bold shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-2 hover:bg-gradient-to-r hover:from-[#0056B3] hover:to-[#00BFFF] hover:shadow-[0_40px_80px_-15px_rgba(0,86,179,0.7)] transition-all duration-700 w-max mt-8 relative overflow-hidden">
-                Submit Mandate
+              <button 
+                type="submit" 
+                disabled={isSubmitting || submitStatus === "success"}
+                className={`px-16 py-6 rounded-none text-[12px] tracking-[0.3em] uppercase font-bold shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] transition-all duration-700 w-max mt-8 relative overflow-hidden ${
+                  submitStatus === "success" 
+                    ? "bg-[#0056B3] text-white cursor-default"
+                    : isSubmitting
+                    ? "bg-pitch/20 text-pitch/50 cursor-wait"
+                    : "bg-pitch text-white hover:-translate-y-2 hover:bg-gradient-to-r hover:from-[#0056B3] hover:to-[#00BFFF] hover:shadow-[0_40px_80px_-15px_rgba(0,86,179,0.7)]"
+                }`}
+              >
+                {submitStatus === "success" ? "Mandate Received" : isSubmitting ? "Processing..." : "Submit Mandate"}
               </button>
 
            </form>

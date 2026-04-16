@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <linearGradient id="logoLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#0b1338" />
+          <stop offset="100%" stopColor="#0056B3" />
+      </linearGradient>
+      <linearGradient id="logoMidL" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#0056B3" />
+          <stop offset="100%" stopColor="#00BFFF" />
+      </linearGradient>
+      <linearGradient id="logoMidR" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#0056B3" />
+          <stop offset="100%" stopColor="#1e40af" />
+      </linearGradient>
+      <linearGradient id="logoRight" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#00BFFF" />
+          <stop offset="100%" stopColor="#3b82f6" />
+      </linearGradient>
+  </defs>
+  <polygon points="0,0 28,0 25,80" fill="url(#logoLeft)" />
+  <polygon points="28,0 50,40 25,80" fill="url(#logoMidL)" />
+  <polygon points="70,0 50,40 75,80" fill="url(#logoMidR)" />
+  <polygon points="70,0 100,0 75,80" fill="url(#logoRight)" />
+</svg>
