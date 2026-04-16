@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import { Bodoni_Moda, Inter_Tight } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
 
-const bodoni = Bodoni_Moda({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-bodoni",
+  variable: "--font-playfair",
   style: ["normal", "italic"],
 });
 
-const interTight = Inter_Tight({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter-tight",
+  variable: "--font-inter",
   weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "WEBSTER ADVISORY | Technical Atelier",
-  description: "High-End Corporate & Salon Strategy Architecture",
+  title: "WEBSTER ADVISORY | High-Performance Salon Sovereignty",
+  description: "Total Operational Sovereignty and Clinical Commercial Clarity",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="no-scrollbar">
       <body
-        className={`${interTight.variable} ${bodoni.variable} bg-background text-foreground antialiased relative`}
+        className={`${inter.variable} ${playfair.variable} bg-background text-foreground antialiased relative`}
       >
         <SmoothScroll>
           <div className="film-grain" />
