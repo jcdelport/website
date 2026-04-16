@@ -151,7 +151,7 @@ export default function Home() {
                
                {/* massive white space separation */}
                <div className="mt-[15vh] w-full md:w-[50vw] flex flex-col gap-8">
-                 <p className="font-sans text-[26px] leading-[1.6] font-light text-[#00BFFF]">
+                 <p className="font-sans text-[26px] leading-[1.6] font-light text-white/90">
                    From first-concept inception to the optimization of established global brands. We architect and refine salon enterprises across the UK, Europe, and the Middle East.
                  </p>
                  <div className="w-16 h-[2px] bg-white"></div>
@@ -194,7 +194,7 @@ export default function Home() {
                  <h2 className="text-[clamp(3.5rem,6vw,6rem)] font-serif leading-[0.9] mb-12 sub-header-mask">
                    <SplitTextWordHelper text="The Principal's Perspective." />
                  </h2>
-                 <p className="font-sans text-[24px] leading-[1.8] font-light opacity-90 max-w-2xl text-[#0056B3]">
+                 <p className="font-sans text-[24px] leading-[1.8] font-light opacity-[0.85] max-w-2xl text-pitch">
                     Marc Webster understands creative ambition, but he understands structural weakness even better. We inform decisions before they become expensive mistakes.
                  </p>
                </div>
