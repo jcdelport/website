@@ -149,11 +149,14 @@ export default function Home() {
                   <SplitTextWordHelper text="Passion starts the movement. Strategy sustains the legacy." />
                </h1>
                
-               {/* 15vw Breathing space forced via max-width logic or raw padding */}
-               <div className="mt-[15vh] w-full md:w-[45vw] flex flex-col gap-8">
+               {/* massive white space separation */}
+               <div className="mt-[15vh] w-full md:w-[50vw] flex flex-col gap-8">
+                 <p className="font-sans text-[26px] leading-[1.6] font-light text-[#00BFFF]">
+                   From first-concept inception to the optimization of established global brands. We architect and refine salon enterprises across the UK, Europe, and the Middle East.
+                 </p>
                  <div className="w-16 h-[2px] bg-white"></div>
-                 <p className="font-sans text-[24px] leading-[1.8] font-light text-white/90">
-                   Fifty years of mastery. From London to Dubai, we architect salon enterprises that outlast the trends.
+                 <p className="font-sans text-[22px] leading-[1.8] font-light text-white/90">
+                   Fifty years of mastery. We provide the clinical foresight required to build from zero or scale with certainty.
                  </p>
                </div>
             </div>
@@ -211,7 +214,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-[1px] bg-white opacity-40 mb-12"></div>
             <p className="font-sans text-[22px] leading-[1.8] font-light text-white/90 max-w-3xl">
-              For the investor who demands a finished, high-performance asset. A full turnkey solution for the UK, Europe, and the Middle East.
+              For investors and founders at the point of inception. We manage the full turnkey lifecycle to ensure your vision opens as a high-performance asset.
             </p>
         </div>
 
@@ -220,19 +223,22 @@ export default function Home() {
            
            <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 01</span>
-             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">Concept &amp; Curation.</h3>
+             <h3 className="text-4xl font-serif leading-[1.1] mb-6">Concept &amp; Curation</h3>
+             <p className="font-sans opacity-70 text-lg font-light leading-relaxed">Sourcing prime real estate and defining the brand’s creative DNA.</p>
            </div>
 
            <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              {/* 10% Radial Glow applied to cards for subtle depth */}
              <div className="absolute inset-0 bg-[#0056B3] blur-[150px] opacity-[0.05] -z-10 rounded-full scale-150"></div>
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 02</span>
-             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">Structural Engineering.</h3>
+             <h3 className="text-4xl font-serif leading-[1.1] mb-6">Structural Engineering</h3>
+             <p className="font-sans opacity-70 text-lg font-light leading-relaxed">Defining wage-to-revenue ratios and clinical labour sustainability models.</p>
            </div>
 
            <div className="relative w-full bg-black/60 backdrop-blur-md p-12 lg:p-16 float-img-wrapper shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] border border-white/5 rounded-sm flex flex-col justify-start">
              <span className="font-mono text-sm uppercase tracking-[0.3em] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF] mb-8 block">Phase 03</span>
-             <h3 className="text-4xl lg:text-5xl font-serif leading-[1]">The Digital Launch.</h3>
+             <h3 className="text-4xl font-serif leading-[1.1] mb-6">The Digital Launch</h3>
+             <p className="font-sans opacity-70 text-lg font-light leading-relaxed">Deploying the full A-Z salon operating system.</p>
            </div>
 
         </div>
@@ -249,15 +255,27 @@ export default function Home() {
                </h2>
                <div className="w-16 h-[2px] bg-pitch mb-8"></div>
                <p className="font-sans text-[22px] leading-[1.8] opacity-90 max-w-md">
-                 Opening a salon requires belief. Sustaining one requires a clinical understanding of margins.
+                 For established businesses seeking commercial clarity. We strip away emotional bias to isolate the variables silently eroding your profitability.
                </p>
             </div>
             
             <div className="w-full md:w-[50%] ml-auto flex flex-col gap-12 float-img-wrapper mt-auto">
-               <h3 className="text-3xl font-serif border-b border-pitch/20 pb-8 hover:text-[#0056B3] transition-colors cursor-default">Break-Even Accuracy</h3>
-               <h3 className="text-3xl font-serif border-b border-pitch/20 pb-8 hover:text-[#0056B3] transition-colors cursor-default">Lease Liability</h3>
-               <h3 className="text-3xl font-serif border-b border-pitch/20 pb-8 hover:text-[#0056B3] transition-colors cursor-default">Cash Flow Resilience</h3>
-               <h3 className="text-3xl font-serif border-b border-pitch/20 pb-8 hover:text-[#0056B3] transition-colors cursor-default">Structural Viability</h3>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Break-Even Accuracy</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Granular analysis of chair-hour profitability.</p>
+               </div>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Lease Liability</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Strategic auditing of rental exposure in premium footprints.</p>
+               </div>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Cash Flow Resilience</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Stress-testing liquidity against seasonal volatility.</p>
+               </div>
+               <div className="border-b border-pitch/20 pb-8 group cursor-default">
+                 <h3 className="text-3xl font-serif mb-4 group-hover:text-[#0056B3] transition-colors">Structural Viability</h3>
+                 <p className="font-sans text-[18px] opacity-70 font-light">Re-aligning creative talent with commercial discipline.</p>
+               </div>
             </div>
          </div>
       </section>
@@ -272,8 +290,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-[1px] bg-white opacity-40 mb-8 mx-auto"></div>
             <p className="font-sans text-[22px] leading-[1.8] font-light max-w-2xl text-white/80">
-              Strategy is nothing without the tools of execution. 
-              The complete operational stack, fully synchronized.
+              We build the complete operational brain of the modern salon. A bespoke, integrated ecosystem designed for high-volume, high-margin management.
             </p>
          </div>
 
@@ -290,7 +307,7 @@ export default function Home() {
               <SplitTextWordHelper text="Independent Commercial Clarity." />
            </h2>
            <p className="font-sans text-[22px] leading-[1.8] font-light opacity-[0.65] mb-24 max-w-2xl">
-              The Enquiry Portal. Secure intake for global mandates.
+              Confidential due diligence and ongoing oversight for providers of capital. We ensure investment decisions are supported by realistic operating assumptions.
            </p>
 
            <form className="flex flex-col gap-24 font-sans w-full max-w-4xl">

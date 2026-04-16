@@ -32,7 +32,7 @@
 
 .scene {
   position: relative;
-  min-height: 1050px;
+  min-height: 650px;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -106,10 +106,6 @@
 .layer2 { top: 115px;  z-index: 7; --grad: var(--l2-grad); --side: var(--l2-side); animation-delay: 0.7s; }
 .layer3 { top: 230px; z-index: 6; --grad: var(--l3-grad); --side: var(--l3-side); animation-delay: 0.6s; }
 .layer4 { top: 345px; z-index: 5; --grad: var(--l4-grad); --side: var(--l4-side); animation-delay: 0.5s; }
-.layer5 { top: 460px; z-index: 4; --grad: var(--l5-grad); --side: var(--l5-side); animation-delay: 0.4s; }
-.layer6 { top: 575px; z-index: 3; --grad: var(--l6-grad); --side: var(--l6-side); animation-delay: 0.3s; }
-.layer7 { top: 690px; z-index: 2; --grad: var(--l7-grad); --side: var(--l7-side); animation-delay: 0.2s; }
-.layer8 { top: 805px; z-index: 1; --grad: var(--l8-grad); --side: var(--l8-side); animation-delay: 0.1s; }
 
 /* Text Calls */
 .desktopOnly {
@@ -173,10 +169,6 @@
 .callout.c02 .num { background: var(--l2-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .callout.c03 .num { background: var(--l3-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .callout.c04 .num { background: var(--l4-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.callout.c05 .num { background: var(--l5-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.callout.c06 .num { background: var(--l6-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.callout.c07 .num { background: var(--l7-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.callout.c08 .num { background: var(--l8-grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .textWrapper {
   display: flex;
@@ -204,10 +196,6 @@
 .c02 { top: 115px;  animation-delay: 0.7s; }
 .c03 { top: 230px; animation-delay: 0.6s; }
 .c04 { top: 345px; animation-delay: 0.5s; }
-.c05 { top: 460px; animation-delay: 0.4s; }
-.c06 { top: 575px; animation-delay: 0.3s; }
-.c07 { top: 690px; animation-delay: 0.2s; }
-.c08 { top: 805px; animation-delay: 0.1s; }
 
 /* Mobiles Lists mapped to Blue Gradients */
 .mobileList {
@@ -253,7 +241,7 @@
 }
 
 @media (max-width: 1024px) {
-  .scene { max-width: 800px; min-height: 950px; }
+  .scene { max-width: 800px; min-height: 600px; }
   .stackCore { left: 0px; transform: scale(0.85); top: -20px; }
   .desktopOnly { left: 260px; width: 500px; }
   .callout::before { left: -75px; width: 55px; }
@@ -263,6 +251,6 @@
 @media (max-width: 840px) {
   .desktopOnly { display: none; }
   .scene { min-height: auto; display: flex; flex-direction: column; align-items: center; margin-top: 0; }
-  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 850px; transform: scale(0.9); }
+  .stackCore { position: relative; left: 0; margin-top: 20px; margin-bottom: 400px; transform: scale(0.9); }
   .mobileList { display: grid; width: 100%; max-width: 600px; }
 }
