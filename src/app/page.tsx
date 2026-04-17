@@ -148,14 +148,14 @@ export default function Home() {
           <section className="relative w-full min-h-[140vh] bg-pitch text-white flex flex-col pt-56 px-8 md:px-24 overflow-hidden z-10">
             
             {/* The Atmosphere (Controlled size, strong shadow, deep Z) */}
-            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[45vw] h-[60vh] md:h-[80vh] float-img-wrapper z-0">
+            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[35vw] h-[70vh] md:h-[90vh] float-img-wrapper z-0">
                <div className="absolute inset-0 bg-[#0056B3] blur-[120px] opacity-20 -z-10 scale-125 translate-y-12"></div>
                {/* Image Cropper Wrapper */}
                <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-sm">
                  <img 
-                    src="/Images/salon_interior.png" 
-                    alt="High End Salon Interior"
-                    className="w-full h-[120%] -top-[10%] object-cover grayscale absolute scale-[1.05]" 
+                    src="/Images/marc_editorial.png" 
+                    alt="Marc Webster Seated"
+                    className="w-full h-[120%] -top-[10%] mb-[15vw] absolute object-cover grayscale contrast-[1.3] brightness-90 scale-[1.06]" 
                  />
                </div>
             </div>
@@ -419,7 +419,7 @@ export default function Home() {
              </div>
           </div>
           <div className="w-[85vw] md:w-[40vw] ml-auto h-[60vh] float-img-wrapper z-40 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.2)] border border-pitch/5 relative mt-16 md:mt-0">
-             <img src="/Images/marc_editorial.png" alt="Webster Branding" className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.3] object-top" />
+             <img src="/Images/WhatsApp%20Image%202026-03-25%20at%2016.15.50%20(1).jpeg" alt="Webster Branding" className="w-full h-[120%] -top-[10%] absolute object-cover grayscale contrast-[1.3] object-top" />
           </div>
       </section>
 
