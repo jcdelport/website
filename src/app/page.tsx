@@ -148,10 +148,10 @@ export default function Home() {
           <section className="relative w-full min-h-[140vh] bg-pitch text-white flex flex-col pt-56 px-8 md:px-24 overflow-hidden z-10">
             
             {/* The Atmosphere (Controlled size, strong shadow, deep Z) */}
-            <div className="absolute right-0 md:right-16 top-64 w-[85vw] md:w-[35vw] h-[70vh] md:h-[90vh] float-img-wrapper z-0">
+            <div className="relative md:absolute md:right-16 md:top-64 w-[100vw] ml-[-2rem] md:ml-0 md:w-[35vw] h-[60vh] md:h-[90vh] float-img-wrapper z-0 order-last md:order-none mt-16 md:mt-0 mb-16 md:mb-0">
                <div className="absolute inset-0 bg-[#0056B3] blur-[120px] opacity-20 -z-10 scale-125 translate-y-12"></div>
                {/* Image Cropper Wrapper */}
-               <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-sm">
+               <div className="w-full h-full relative overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,1)] rounded-none md:rounded-sm">
                  <img 
                     src="/Images/marc_editorial.png" 
                     alt="Marc Webster Seated"
