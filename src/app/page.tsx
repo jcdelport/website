@@ -182,8 +182,9 @@ export default function Home() {
                </div>
             </div>
 
-            <div className="relative mt-auto mb-12 w-full md:pl-[5vw] z-10 pointer-events-none opacity-20 pt-32 hidden md:block">
-               <h2 className="text-[clamp(10rem,20vw,26rem)] font-serif leading-[0.8] tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#00BFFF]">
+            {/* The Mastery Watermark */}
+            <div className="absolute top-[10%] md:top-[15%] left-[-5%] md:left-[-10%] w-full z-0 pointer-events-none opacity-[0.02] select-none flex flex-col justify-center overflow-hidden">
+               <h2 className="text-[clamp(25rem,45vw,50rem)] font-serif leading-[0.75] tracking-tighter text-white whitespace-nowrap">
                  50<br/>YEARS
                </h2>
             </div>
